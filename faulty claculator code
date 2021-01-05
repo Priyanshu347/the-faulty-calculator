@@ -1,0 +1,41 @@
+#This is a faulty calculator
+#exept 43*3=555,56+9=77,56/6=4 it will give all the right answers
+def add(x,y):
+    return x+y
+def sub(x,y):
+    return x-y
+def multi(x,y):
+    return x*y
+def divide(x,y):
+    return x/y
+print("which operation do u want to proceed")
+print("1.add")
+print("2.sub")
+print("3.multi")
+print("4.divide")
+choice=input("Enter choice : 1/2/3/4\n")
+print("enter first input")
+int1=int(input())
+print("enter the second input")
+int2=int(input())
+print("The evaluation of the following operation is :")
+if choice=='1':
+    if int1==56 and int2==9:
+        print("77")
+    else:
+        print(add(int1, int2))
+elif choice=='2':
+    print(sub(int1,int2))
+elif choice=='3':
+    if int1==43 and int2==3:
+        print("555")
+    else:
+        print(multi(int1, int2))
+elif choice=='4':
+    if int1==56 and int2==6:
+        print("4")
+    else:
+        print(divide(int1, int2))
+else:
+    print("you have entered invalid operation ")
+
